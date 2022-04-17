@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: rgb(134, 134, 134);
+}
+
+#bg-login {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-login {
+  width: 300px;
+  min-height: 200px;
+  border: 1px solid #fff;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5%;
+}
+
+.box-login h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.input-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.button {
+  padding: 8px 15px;
+  background-color: rgb(134, 134, 134);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}

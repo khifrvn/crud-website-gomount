@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: poppins;
+  color: #162717;
+  background: #efeeec !important;
+}
+
+.video-background {
+  position: relative;
+  /*background-color: rgba(0,0,0,0.3);*/
+}
+
+.video-background video {
+  height: 100vh;
+  width: 100%;
+  background-position: absolute;
+  z-index: 10;
+  object-fit: cover;
+}
+
+.caption {
+  position: absolute;
+  top: 38%;
+  width: 100%;
+  z-index: 20;
+  color: white;
+}
+
+#about {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+#btnabout {
+  background-color: #162717 !important;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  border-radius: 27px;
+  width: 200px;
+}
+
+#btnabout .inner {
+  position: relative;
+  z-index: 2;
+}
+
+#btnabout canvas {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  bottom: -50px;
+  left: -50px;
+  z-index: 1;
+}
+
+#btnabt {
+  background-color: #162717 !important;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+#btnabt span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#btnabt span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#btnabt:hover span {
+  padding-right: 25px;
+}
+
+#btnabt:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#camping {
+  background-color: #fff;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+#camping img {
+  transition: transform 0.5s ease;
+}
+
+#camping img:hover {
+  transform: scale(1.1);
+}
+
+#camping p {
+  font-size: 13px;
+}
+
+.embed-border {
+  box-sizing: border-box;
+  padding-top: 2rem;
+}
+
+.embed-responsive {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.embed-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#hiking {
+  padding-bottom: 4rem;
+  font-family: "Sans-Serif";
+}
+
+.titleHike {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.textJmb {
+  padding-top: 5rem;
+  text-align: center;
+  color: white;
+  font-family: poppins;
+}
+
+.hikeImg {
+  width: 333px;
+  height: 370px;
+  position: relative;
+  object-fit: cover;
+}
+
+#hiking p {
+  font-family: "Poppins";
+  font-size: 13px;
+}
+
+#footer {
+  padding-top: 3rem;
+  width: 100%;
+  background-color: #162717;
+  color: white;
+}
+
+#footer p {
+  font-size: 12px;
+}
+
+#socmedFooter ul li {
+  display: inline;
+  font-size: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+a {
+  color: orange;
+}
+
+#contact {
+  background-color: white;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.media ul li {
+  display: inline;
+  font-size: 30px;
+  margin-left: 23px;
+  margin-right: 10px;
+}
+
+.media ul li:hover {
+  color: red;
+}
+
+#icon {
+  width: 30px;
+  height: 30px;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-background {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .video-background {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .caption h1 {
+    font-size: 1.4rem;
+    letter-spacing: 0.15rem;
+    padding-bottom: 0.5rem;
+  }
+  .caption p {
+    font-size: 1.1rem;
+    padding-bottom: 1.2rem;
+  }
+  .caption a {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (min-width: 300px) {
+  #card {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1202px) {
+  #hike {
+    margin-right: 2rem;
+  }
+}
